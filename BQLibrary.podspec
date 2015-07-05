@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BQLibrary"
-  s.version          = "0.1.0"
+  s.version          = "0.0.1"
   s.summary          = "A library provide shortcuts and easy ways of usage of IOS Libray."
   # s.description      = <<-DESC
   #                      An optional longer description of BQLibrary
