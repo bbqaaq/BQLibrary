@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'BQLibrary_Example', :exclusive => true do
+  pod "BQLibrary", :path => "../"
+end
+
+target 'BQLibrary_Tests', :exclusive => true do
+  pod "BQLibrary", :path => "../"
+
+  pod 'FBSnapshotTestCase'
+end
