@@ -29,7 +29,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'BQLibrary' => ['Pod/Assets/*.png']
+    'Images' => ['Pod/Assets/*.png']
+    'Resources/Localization' => ['Pod/Assets/Localization/*.lproj']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

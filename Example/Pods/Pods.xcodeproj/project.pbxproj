@@ -141,8 +141,6 @@
 		C9205336B79F4F27A5341A16 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93B5BCD73610310A4C40731 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF3CE3C809AB29FE78EF4F5E /* Pods_BQLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BQLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCF6CD711B494FA3004D79EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BQLibraryLocalizable.strings; sourceTree = "<group>"; };
-		DCF6CD721B494FA3004D79EC /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/BQLibraryLocalizable.strings"; sourceTree = "<group>"; };
 		DCF6CD751B494FA3004D79EC /* BQAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQAssetsLibrary.h; sourceTree = "<group>"; };
 		DCF6CD761B494FA3004D79EC /* BQAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BQAssetsLibrary.m; sourceTree = "<group>"; };
 		DCF6CD771B494FA3004D79EC /* BQCommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQCommonHeader.h; sourceTree = "<group>"; };
@@ -153,6 +151,8 @@
 		DCF6CD7C1B494FA3004D79EC /* BQStringExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BQStringExtension.m; sourceTree = "<group>"; };
 		DCF6CD7D1B494FA3004D79EC /* BQViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQViewExtension.h; sourceTree = "<group>"; };
 		DCF6CD7E1B494FA3004D79EC /* BQViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BQViewExtension.m; sourceTree = "<group>"; };
+		DCF6CD951B495C4B004D79EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BQLibraryLocalizable.strings; sourceTree = "<group>"; };
+		DCF6CD961B495C4B004D79EC /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/BQLibraryLocalizable.strings"; sourceTree = "<group>"; };
 		DDA12DE9F2C6904D66873DBA /* Pods-BQLibrary_Tests-BQLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-BQLibrary_Tests-BQLibrary.modulemap"; path = "../Pods-BQLibrary_Tests-BQLibrary/Pods-BQLibrary_Tests-BQLibrary.modulemap"; sourceTree = "<group>"; };
 		DFC398A085D95FCDAF7BD314 /* Pods-BQLibrary_Tests-FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BQLibrary_Tests-FBSnapshotTestCase.xcconfig"; sourceTree = "<group>"; };
 		E063AECCFE16AFDC027EDC52 /* BQLibrary.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BQLibrary.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -391,18 +391,10 @@
 		CD961751398CE2946088CE18 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				DCF6CD6E1B494FA3004D79EC /* Assets */,
+				DCF6CD921B495C4B004D79EC /* Assets */,
 				DCF6CD731B494FA3004D79EC /* Classes */,
 			);
 			path = Pod;
-			sourceTree = "<group>";
-		};
-		DCF6CD6E1B494FA3004D79EC /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				DCF6CD701B494FA3004D79EC /* BQLibraryLocalizable.strings */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		DCF6CD731B494FA3004D79EC /* Classes */ = {
@@ -420,6 +412,22 @@
 				DCF6CD7E1B494FA3004D79EC /* BQViewExtension.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		DCF6CD921B495C4B004D79EC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DCF6CD931B495C4B004D79EC /* Localization */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DCF6CD931B495C4B004D79EC /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				DCF6CD941B495C4B004D79EC /* BQLibraryLocalizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		DF44EB52B2D1FF006088DE42 /* Products */ = {
@@ -795,11 +803,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DCF6CD701B494FA3004D79EC /* BQLibraryLocalizable.strings */ = {
+		DCF6CD941B495C4B004D79EC /* BQLibraryLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DCF6CD711B494FA3004D79EC /* en */,
-				DCF6CD721B494FA3004D79EC /* zh-Hant */,
+				DCF6CD951B495C4B004D79EC /* en */,
+				DCF6CD961B495C4B004D79EC /* zh-Hant */,
 			);
 			name = BQLibraryLocalizable.strings;
 			sourceTree = "<group>";
