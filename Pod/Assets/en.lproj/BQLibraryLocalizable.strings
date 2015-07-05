@@ -1,0 +1,19 @@
+/* 
+  BQLibraryLocalizable.strings
+  Common Library
+
+  Created by CHAU WING WAI on 10/2/14.
+  Copyright (c) 2014 CHAU WING WAI. All rights reserved.
+*/
+
+"common.alertview.button.OK" = "OK";
+"common.alertview.button.confirm" = "Confirm";
+"common.alertview.button.cancel" = "Cancel";
+
+//  BQAssetsLibrary View
+"bqassetslibrary.alertview.notauthorized.title" = "No Access Right";
+"bqassetslibrary.alertview.notauthorized.message" = "Photo access is not authorized. Please turn on the acccess right in Settings>Privacy>Photo .";
+"bqassetslibrary.alertview.nospace.title" = "Disk full";
+"bqassetslibrary.alertview.nospace.message" = "Not enough space to store photo into photo album.";
+"bqassetslibrary.alertview.unknowerror.title" = "Can't save photo";
+"bqassetslibrary.alertview.unknowerror.message" = "Saving photo failed.";

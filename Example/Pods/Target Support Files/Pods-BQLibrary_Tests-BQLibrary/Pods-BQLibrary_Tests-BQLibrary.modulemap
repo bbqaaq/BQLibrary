@@ -1,0 +1,6 @@
+framework module BQLibrary {
+  umbrella header "Pods-BQLibrary_Tests-BQLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

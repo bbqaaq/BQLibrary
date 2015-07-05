@@ -1,0 +1,21 @@
+PODS:
+  - BQLibrary (0.1.0)
+  - FBSnapshotTestCase (2.0.2):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.2)
+  - FBSnapshotTestCase/Core (2.0.2)
+  - FBSnapshotTestCase/SwiftSupport (2.0.2):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - BQLibrary (from `../`)
+  - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  BQLibrary:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BQLibrary: e76b3c2d878946efab29de86c442f5ca602ba6f0
+  FBSnapshotTestCase: fd500d5b282c4ec60215d26d0b58b0cf271dd0d6
+
+COCOAPODS: 0.37.2

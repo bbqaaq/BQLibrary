@@ -10,18 +10,18 @@
 Pod::Spec.new do |s|
   s.name             = "BQLibrary"
   s.version          = "0.1.0"
-  s.summary          = "A short description of BQLibrary."
-  s.description      = <<-DESC
-                       An optional longer description of BQLibrary
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/BQLibrary"
+  s.summary          = "A library provide shortcuts and easy ways of usage of IOS Libray."
+  # s.description      = <<-DESC
+  #                      An optional longer description of BQLibrary
+  # 
+  #                      * Markdown format.
+  #                      * Don't worry about the indent, we strip it!
+  #                      DESC
+  s.homepage         = "https://github.com/bbqaaq/BQLibrary"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "CHAU WING WAI" => "bbqaaq@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/BQLibrary.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/bbqaaq/BQLibrary.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'

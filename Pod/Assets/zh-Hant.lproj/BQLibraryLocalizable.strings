@@ -1,0 +1,19 @@
+/* 
+  BQLibraryLocalizable.strings
+  Common Library
+
+  Created by CHAU WING WAI on 10/2/14.
+  Copyright (c) 2014 CHAU WING WAI. All rights reserved.
+*/
+
+"common.alertview.button.OK" = "確定";
+"common.alertview.button.confirm" = "確定";
+"common.alertview.button.cancel" = "取消";
+
+//  BQAssetsLibrary View
+"bqassetslibrary.alertview.notauthorized.title" = "無法存取相片";
+"bqassetslibrary.alertview.notauthorized.message" = "用戶未開啟程式的存取權限。請於 設定>隱私>照片 開啟程式權限。";
+"bqassetslibrary.alertview.nospace.title" = "空間不足";
+"bqassetslibrary.alertview.nospace.message" = "未有足夠儲存空間以存入相片。";
+"bqassetslibrary.alertview.unknowerror.title" = "無法儲存相片";
+"bqassetslibrary.alertview.unknowerror.message" = "儲存相片未能成功。";
