@@ -29,11 +29,11 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'Images' => ['Pod/Assets/*.png']
-    'Resources/Localization' => ['Pod/Assets/Localization/*.lproj']
+    'Images' => ['Pod/Assets/*.png'],
+    'Localization' => ['Pod/Assets/Localization/*.lproj']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'Foundation', 'AssetsLibrary'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
