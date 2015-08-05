@@ -27,3 +27,35 @@
 }
 
 @end
+
+//--------------------------------------------------------------------------------------------------
+@implementation NSString (DateFormat)
+
+- (NSDate *)date {
+    return [self dateWithFormat:DATE_FORMAT];
+}
+
+- (NSDate *)dateWithFormat:(NSString *)dateFormat {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:dateFormat];
+    
+    return [dateFormatter dateFromString:self];
+}
+
+@end
+//--------------------------------------------------------------------------------------------------
+@implementation NSDate (DateFormat)
+
+- (NSString *)string {
+    return [self stringWithFormat:DATE_FORMAT];
+}
+
+- (NSString *)stringWithFormat:(NSString *)dateFormat {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:dateFormat];
+    
+    return stringFromDate = [formatter stringFromDate:self];
+}
+
+@end
+//--------------------------------------------------------------------------------------------------

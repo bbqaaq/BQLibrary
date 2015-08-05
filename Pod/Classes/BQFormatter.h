@@ -15,7 +15,7 @@
 #define NSStringFromInt(i)                          [NSString stringWithFormat:@"%d",i]
 #define NSStringFromFloat(num,dp)                   [NSString stringWithFormat:[NSString stringWithFormat:@"%%.%df",dp],num]
 
-//#define DATE_FORMAT_SQLITE                          @"yyyy-mm-dd hh:"
+#define DATE_FORMAT                                 @"yyyy-MM-dd hh:mm:ss"
 //--------------------------------------------------------------------------------------------------
 @interface BQFormatter : NSObject
 
@@ -24,3 +24,18 @@
 + (float)floatNumber:(float)floatNumber decimalPlace:(int)decimalPlace;
 
 @end
+//--------------------------------------------------------------------------------------------------
+@interface NSString (DateFormat)
+
+- (NSDate *)date;
+- (NSDate *)dateWithFormat:(NSString *)dateFormat;
+
+@end
+//--------------------------------------------------------------------------------------------------
+@interface NSDate (DateFormat)
+
+- (NSString *)string;
+- (NSString *)stringWithFormat:(NSString *)dateFormat;
+
+@end
+//--------------------------------------------------------------------------------------------------
