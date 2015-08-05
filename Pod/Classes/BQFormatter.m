@@ -51,10 +51,10 @@
 }
 
 - (NSString *)stringWithFormat:(NSString *)dateFormat {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:dateFormat];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:dateFormat];
     
-    return stringFromDate = [formatter stringFromDate:self];
+    return stringFromDate = [dateFormatter stringFromDate:self];
 }
 
 @end
