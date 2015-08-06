@@ -15,7 +15,7 @@
 #define NSStringFromInt(i)                          [NSString stringWithFormat:@"%d",i]
 #define NSStringFromFloat(num,dp)                   [NSString stringWithFormat:[NSString stringWithFormat:@"%%.%df",dp],num]
 
-#define DATE_FORMAT                                 @"yyyy-MM-dd hh:mm:ss"
+#define DATE_FORMAT                                 @"yyyy-MM-dd HH:mm:ss"
 //--------------------------------------------------------------------------------------------------
 @interface BQFormatter : NSObject
 
