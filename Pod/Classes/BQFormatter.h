@@ -13,6 +13,8 @@
 #define IntFromBOOL(b)                              b?1:0
 #define NSStringFromBOOL(b)                         b?@"YES":@"NO"
 #define NSStringFromInt(i)                          [NSString stringWithFormat:@"%d",i]
+#define NSStringFromInteger(i)                      [NSString stringWithFormat:@"%lu",(long)i]
+#define NSStringFromUInteger(i)                     [NSString stringWithFormat:@"%lu",(unsigned long)i]
 #define NSStringFromFloat(num,dp)                   [NSString stringWithFormat:[NSString stringWithFormat:@"%%.%df",dp],num]
 
 #define DATE_FORMAT                                 @"yyyy-MM-dd HH:mm:ss"
